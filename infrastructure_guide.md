@@ -19,7 +19,7 @@ you need to do the following steps.
    for information about the machine.
 
 Once you have done this you will be able to access Anubis (this make take a day or two to process for us)
-at `anubis.juliacomuting.io` via `ssh`. Do note that your username is your Github
+at `anubis.juliacomputing.io` via `ssh`. Do note that your username is your Github
 account name.
 
 ## AWS
