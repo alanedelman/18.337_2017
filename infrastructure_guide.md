@@ -53,10 +53,13 @@ ssh -i .ssh/$AWSKEY.pem -L 8080:localhost:8080 ubuntu@$PUBLIC_DNS
 > julia
 julia> using IJulia
 julia> notebook(detached=true)
-julia> ;$(IJulia.notebook_cmd[1]) notebook list
+julia> run(`$(IJulia.notebook_cmd[1]) notebook list`)
 # Get the token used by the instance bound to localhost:8888
 # and visit localhost:8888 in your browser and past the token their
 ```
+
+### Note:
+You can switch to a shell mode in the Julia REPL by pressing `;` or execute programs with `run(\`echo "Hello World!"\`)`
 
 to terminate all Jupyter instances running use `killall jupyter-notebook`
 
