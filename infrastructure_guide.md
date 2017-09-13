@@ -49,7 +49,7 @@ and you should stop your instances if you are not using them.
 To launch a Jupyter notebook your currently have to do the following:
 
 ```
-ssh -i .ssh/$AWSKEY.pem -L 8080:localhost:8080 ubuntu@$PUBLIC_DNS
+ssh -i .ssh/$AWSKEY.pem -L 8888:localhost:8888 ubuntu@$PUBLIC_DNS
 > julia
 julia> using IJulia
 julia> notebook(detached=true)
